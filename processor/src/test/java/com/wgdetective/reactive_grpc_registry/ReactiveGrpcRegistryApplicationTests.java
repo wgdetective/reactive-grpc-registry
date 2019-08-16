@@ -1,4 +1,4 @@
-package reactive_grpc_registry;
+package com.wgdetective.reactive_grpc_registry;
 
 import org.junit.Ignore;
 import org.junit.Test;

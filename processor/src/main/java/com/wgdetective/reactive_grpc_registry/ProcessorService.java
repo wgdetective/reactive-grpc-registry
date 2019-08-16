@@ -1,8 +1,6 @@
-package reactive_grpc_registry;
+package com.wgdetective.reactive_grpc_registry;
 
 import com.salesforce.grpc.contrib.spring.GrpcService;
-import com.wgdetective.reactive_grpc_registry.ReactorProcessorGrpc;
-import com.wgdetective.reactive_grpc_registry.RegistryProto;
 import lombok.AllArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;

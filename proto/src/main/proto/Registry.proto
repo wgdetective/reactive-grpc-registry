@@ -6,9 +6,6 @@ option java_package = "com.wgdetective.reactive_grpc_registry";
 option java_outer_classname = "RegistryProto";
 
 import "google/protobuf/empty.proto";
-import "google/protobuf/timestamp.proto";
-import "google/protobuf/descriptor.proto";
-import "google/protobuf/source_context.proto";
 
 service Registry {
     rpc Register (RegisterRequest) returns (RegisterResponse) {

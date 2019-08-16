@@ -1,4 +1,4 @@
-package reactive_grpc_registry;
+package com.wgdetective.reactive_grpc_registry;
 
 import com.salesforce.grpc.contrib.spring.GrpcServerHost;
 import org.springframework.beans.factory.annotation.Autowired;

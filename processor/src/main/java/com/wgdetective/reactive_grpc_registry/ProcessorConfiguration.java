@@ -1,4 +1,4 @@
-package reactive_grpc_registry;
+package com.wgdetective.reactive_grpc_registry;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

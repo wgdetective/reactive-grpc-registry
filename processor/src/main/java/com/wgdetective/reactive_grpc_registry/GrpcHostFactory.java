@@ -1,8 +1,6 @@
-package reactive_grpc_registry;
+package com.wgdetective.reactive_grpc_registry;
 
 import com.salesforce.grpc.contrib.spring.GrpcServerHost;
-import com.wgdetective.reactive_grpc_registry.ReactorRegistryGrpc;
-import com.wgdetective.reactive_grpc_registry.RegistryProto;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import lombok.AllArgsConstructor;

@@ -18,7 +18,7 @@ import java.util.List;
 public class RegistryController {
 	private final RegistryService registryService;
 
-	@GetMapping("/getAll")
+	@GetMapping("/all")
 	private Mono<List<String>> getAll() {
 		return registryService.getAllRegisteredProcessors();
 	}
