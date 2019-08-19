@@ -2,20 +2,19 @@
 
 Example of registry that will register each connected in runtime processor with grpc, and can send requests with grpc to them.
 
-./gradlew build && ./gradlew :application:bootRun
 
 ## Build and run:
 To build execute: 
     
-    mnv clean install
+    ./gradlew build
     
-To run registry execute following command in registry module:
+To run registry execute following command:
 
-    mvn spring-boot:run
+    ./gradlew :registry:bootRun
 
-To run processors execute following command in processor module (each run will create new processor):
+To run processors execute following command (each run will create new processor):
 
-    mvn spring-boot:run
+    ./gradlew :processor:bootRun
 
 ##Usage:
 After registering of processor in registry, it's able to send request throw registry to processor using grpc.
