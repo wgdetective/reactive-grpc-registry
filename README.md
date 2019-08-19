@@ -28,4 +28,6 @@ To send request to some processor execute:
     
  where target is name of the processor.    
 
+##Gradle
+Reactive grpc gradle example is located in gradle-example branch
 
