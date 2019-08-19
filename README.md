@@ -2,6 +2,8 @@
 
 Example of registry that will register each connected in runtime processor with grpc, and can send requests with grpc to them.
 
+./gradlew build && ./gradlew :application:bootRun
+
 ## Build and run:
 To build execute: 
     
