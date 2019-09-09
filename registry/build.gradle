@@ -17,11 +17,10 @@ apply plugin: 'io.spring.dependency-management'
 
 dependencies {
     compile project(':proto')
-    compile 'org.springframework.boot:spring-boot-starter-webflux:2.1.6.RELEASE'
+    compile "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}"
 
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
 
-
-    testCompile 'org.springframework.boot:spring-boot-starter-test:2.1.6.RELEASE'
+    testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
 }
