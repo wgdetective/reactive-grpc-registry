@@ -4,6 +4,7 @@ import com.salesforce.grpc.contrib.spring.GrpcService;
 import lombok.AllArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
@@ -20,5 +21,10 @@ public class ProcessorService extends ReactorProcessorGrpc.ProcessorImplBase {
 			.mergeFrom(r)
 			.setMessageBody("Message processed: " + r.getMessageBody())
 			.build());
+	}
+
+	@Override
+	public Flux<RegistryProto.ProcessorMessage> processStream(final Flux<RegistryProto.ProcessorMessage> request) {
+		return request;
 	}
 }

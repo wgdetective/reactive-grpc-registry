@@ -27,6 +27,9 @@ message RegisterResponse {
 service Processor {
     rpc Process (ProcessorMessage) returns (ProcessorMessage) {
     }
+
+    rpc ProcessStream (stream ProcessorMessage) returns (stream ProcessorMessage) {
+    }
 }
 
 message ProcessorMessage {

@@ -28,5 +28,4 @@ public class RegistryController {
 							  @RequestParam final String body) {
 		return registryService.process(target, body).map(RegistryProto.ProcessorMessage::getMessageBody);
 	}
-
 }
